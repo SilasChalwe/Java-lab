@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Define the root path for the Java project structure
-ROOT_DIR=~/Java-programming/projects/intermediate
+ROOT_DIR=~/Java-programming/Java-Study-Group/projects/intermediate
 
-# Create necessary directories for exception handling and multi-dimensional arrays
-mkdir -p $ROOT_DIR/exception-handling/checked-exception $ROOT_DIR/exception-handling/unchecked-exception $ROOT_DIR/arrays/multi-dimensional-array
+# Create necessary directories
+mkdir -p $ROOT_DIR/student-management $ROOT_DIR/atm-simulator $ROOT_DIR/file-handling $ROOT_DIR/bank-account-system
 
 # Function to create a file with content
 create_java_file() {
@@ -16,8 +16,8 @@ create_java_file() {
     echo "$CONTENT" > "$FOLDER/$FILE_NAME"
 }
 
-# Checked Exceptions Folder (StudentCheckedException.java)
-create_java_file "$ROOT_DIR/exception-handling/checked-exception" "StudentCheckedException.java" '
+# Checked Exceptions File (Student.java - File Handling)
+create_java_file "$ROOT_DIR/student-management" "StudentCheckedException.java" '
 // Student class demonstrating checked exceptions (IOException)
 
 import java.io.*;
@@ -48,8 +48,8 @@ public class StudentCheckedException {
     }
 }'
 
-# Unchecked Exceptions Folder (ATMUncheckedException.java)
-create_java_file "$ROOT_DIR/exception-handling/unchecked-exception" "ATMUncheckedException.java" '
+# Unchecked Exceptions File (ATM.java - ArithmeticException)
+create_java_file "$ROOT_DIR/atm-simulator" "ATMUncheckedException.java" '
 // ATM class demonstrating unchecked exceptions (ArithmeticException)
 
 public class ATMUncheckedException {
@@ -63,8 +63,8 @@ public class ATMUncheckedException {
     }
 }'
 
-# Multi-dimensional Array Folder (FileHandlerMultiDimensionalArray.java)
-create_java_file "$ROOT_DIR/arrays/multi-dimensional-array" "FileHandlerMultiDimensionalArray.java" '
+# Multi-dimensional Array File (FileHandler.java)
+create_java_file "$ROOT_DIR/file-handling" "FileHandlerMultiDimensionalArray.java" '
 // FileHandler class demonstrating multi-dimensional arrays
 
 public class FileHandlerMultiDimensionalArray {
@@ -83,7 +83,7 @@ public class FileHandlerMultiDimensionalArray {
 }'
 
 # Bank Account System with Multi-dimensional Array
-create_java_file "$ROOT_DIR/arrays/multi-dimensional-array" "BankAccountMultiDimensionalArray.java" '
+create_java_file "$ROOT_DIR/bank-account-system" "BankAccountMultiDimensionalArray.java" '
 // BankAccount class demonstrating multi-dimensional arrays
 
 public class BankAccountMultiDimensionalArray {
@@ -102,4 +102,5 @@ public class BankAccountMultiDimensionalArray {
 }'
 
 # Output success message
-echo "Intermediate Java files have been created in respective folders: exception-handling, multi-dimensional-array!"
+echo "Intermediate Java files with checked exceptions, unchecked exceptions, and multi-dimensional arrays have been created!"
+
