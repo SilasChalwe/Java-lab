@@ -5,7 +5,7 @@
 
 Tic Tac Toe is a simple yet popular game for two players. It is played on a 3×3 grid where each player uses either the symbol **X** or **O**. Players take turns placing their symbol in an empty cell of the grid. The goal is to be the first player to align three of their symbols in a row, either horizontally, vertically, or diagonally. If all the cells on the grid are filled and no player has achieved this, the game ends in a draw.
 
-For this task, you are required to implement the game **Tic Tac Toe** in **Java** using a **3D array**. This adds a layer of complexity, but also flexibility for future enhancements.
+For this task, you are required to implement the game **Tic Tac Toe** in **Java** using a **2D array**
 
 ---
 
